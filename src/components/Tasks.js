@@ -25,5 +25,12 @@ function Tasks(props) {
                     </div>);
 }
 
-export default Tasks;
+import {connect} from "react-redux";
 
+const mapStateToProps = function (state) {
+  return {
+    newTasks: state.newTasks
+  };
+};
+
+export default connect(mapStateToProps)(Tasks)

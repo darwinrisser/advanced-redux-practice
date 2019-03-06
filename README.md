@@ -20,8 +20,6 @@ fork, clone, npm install, npm start
 * Remember 2 parameters state and action. Remember to return state
 * Combine the reducers and export
   
-
-
 ### Create the store
 * Create a store.js file
 * Import createStore from redux
@@ -59,4 +57,3 @@ fork, clone, npm install, npm start
 ### Fix
 * In App.js remove the props parameter and all instances of passing props 
 * In index.js remove all instances of state and passing props to App
-

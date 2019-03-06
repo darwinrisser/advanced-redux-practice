@@ -1,5 +1,4 @@
 import React from "react";
-import {connect} from "react-redux";
 
 function Tickets(props) {
   return(
@@ -26,12 +25,13 @@ function Tickets(props) {
       </div>
     </div>);
 }
+
+import {connect} from "react-redux";
+
 const mapStateToProps = function (state) {
   return {
     tickets: state.tickets
   };
 };
-export default (Tickets);
-// export default connect(mapStateToProps,null)(Tickets);
 
-
+export default connect(mapStateToProps)(Tickets)

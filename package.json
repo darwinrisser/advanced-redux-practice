@@ -2,6 +2,7 @@
   "name": "contact-list-starter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://darwinrisser.github.io/redux",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.14.0",
@@ -19,11 +20,13 @@
     "redux": "^3.6.0"
   },
   "scripts": {
-    "start": "nf start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "lint": "eslint src",
     "react-app": "react-scripts start",
     "api": "json-server --id _id --watch --port 4000 db.json",
-    "build": "react-scripts build",
     "test": "npm run lint && react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
